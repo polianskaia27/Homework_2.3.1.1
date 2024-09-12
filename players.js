@@ -19,56 +19,6 @@ const players = [
     name: "Olga",
     scorePoints: 2356,
   },
-  {
-    id: 5,
-    name: "Anna",
-    scorePoints: 4100,
-  },
-  {
-    id: 6,
-    name: "Sergei",
-    scorePoints: 3900,
-  },
-  {
-    id: 7,
-    name: "Elena",
-    scorePoints: 2800,
-  },
-  {
-    id: 8,
-    name: "Dmitry",
-    scorePoints: 1200,
-  },
-  {
-    id: 9,
-    name: "Maria",
-    scorePoints: 3700,
-  },
-  {
-    id: 10,
-    name: "Alex",
-    scorePoints: 5900,
-  },
-  {
-    id: 11,
-    name: "Natalia",
-    scorePoints: 4300,
-  },
-  {
-    id: 12,
-    name: "Yuri",
-    scorePoints: 6150,
-  },
-  {
-    id: 13,
-    name: "Tatiana",
-    scorePoints: 3800,
-  },
-  {
-    id: 14,
-    name: "Mikhail",
-    scorePoints: 2600,
-  },
 ];
 
 let allScorePoints = new Array();
@@ -81,4 +31,4 @@ for (const numOfElement in players) {
 maxScore = Math.max(...allScorePoints);
 indexOfBestPlayer = allScorePoints.indexOf(maxScore);
 bestPlayer = players[indexOfBestPlayer].name;
-console.log(`Максимальное количество очков набрал ${bestPlayer}.`);
+console.log(`Максимальное количество очков набрал ${bestPlayer}: ${maxScore}.`);
