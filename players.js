@@ -74,8 +74,8 @@ const players = [
 let allScorePoints = new Array();
 
 for (const numOfElement in players) {
-  scorePointsOfStudent = players[numOfElement].scorePoints;
-  allScorePoints.push(scorePointsOfStudent);
+  scorePointsOfPlayer = players[numOfElement].scorePoints;
+  allScorePoints.push(scorePointsOfPlayer);
 }
 
 maxScore = Math.max(...allScorePoints);
